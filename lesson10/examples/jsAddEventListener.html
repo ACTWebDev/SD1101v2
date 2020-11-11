@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    <meta lang="en-US">
+    
+    <title>JS Events</title>
+    <style>
+    div{
+      box-sizing: border-box;
+      width: 500px;
+      height:500px;
+      background-color: rgb(200,200,200);
+      margin: auto;
+      border: 2px solid black;
+      font-size: 2em;
+      
+    }
+
+
+    #btn1{
+      box-sizing: border-box;
+      width: 50%;
+      height: 50%;
+      margin: auto;
+      float: right;
+      
+
+    }
+    </style>
+
+
+  </head>
+
+
+  <body>
+    <h1>JS Events</h1>
+    <div id='target'> 
+        <input type='button' id="btn1" value='I have no HTML Events by Default'>
+    </div>
+
+  
+  <script>
+    function jsMouseOver(){
+
+      var element = document.getElementById("btn1");
+      element.style.backgroundColor = '#20c8df';
+    }
+
+    function jsMouseOut(){
+
+      var element = document.getElementById("btn1");
+      element.style.backgroundColor = '#f0eb5d';
+    }
+
+    function jsClick(){
+      var newElement = document.createElement("button");
+      newElement.style.background = "blue";
+      document.body.appendChild(newElement);
+    }
+
+    document.getElementById("btn1").addEventListener("mouseover", jsMouseOver);
+    document.getElementById("btn1").addEventListener("mouseout", jsMouseOut);
+    document.getElementById("btn1").addEventListener("click", jsClick);
+    window.alert("HTML Events inserted on the button by JS on page load.");
+
+
+
+  </script>
+
+  </body>
+</html>

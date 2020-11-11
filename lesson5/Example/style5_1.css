@@ -1,0 +1,48 @@
+      .style1 {
+        background-color: black;
+        color: white;
+        font-size: 96px;
+        border: 8px solid green;
+      }
+
+      .style2 {
+        background-color: silver;
+        color: green;
+        font-size: 24px;
+        border: 8px solid red;
+      }
+
+      #special {
+        font-size: 20px;
+        color: purple;
+
+
+      }
+
+      .someClass{
+        background-color: #E8F93C;
+        width: 50%;
+      }
+
+
+
+      p {
+        font-size: 48px;
+      }
+
+      p:hover {
+        color:red;
+      }
+
+      h1{
+        background-color: crimson;
+        color:black;
+      }
+
+      #myHeading{
+        background-color: greenyellow;
+      }
+
+      .classExample{
+        background-color: skyblue;
+      }

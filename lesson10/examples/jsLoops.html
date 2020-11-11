@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    <meta lang="en-US">
+    
+    <title>JS Loop</title>
+    <style>
+    div{
+      display:flex;
+      box-sizing: border-box;
+      width: 500px;
+      height:500px;
+      background-color: rgb(200,200,200);
+      margin: auto;
+      border: 2px solid black;
+      font-size: 2em;
+      overflow: scroll;
+      
+    }
+
+
+    #btn1{
+      width: '75px';
+      margin: auto;
+      float: right;
+      padding: 1%;
+
+    }
+    </style>
+
+
+  </head>
+
+
+  <body>
+    <h1>JS Loop</h1>
+    <label for='inputbox1'>How Many Loops?</label>
+    <input type=number id='inputbox1' name='inputbox1'>
+
+
+    <div id='target'> 
+        <input type='button' id="btn1" onclick="jsLoop()" value='run Loop'>
+
+    </div>
+
+  
+  <script>
+    function jsLoop(){
+      var input1 = document.getElementById('inputbox1');
+      var numberOfLoops = Number(input1.value) ;
+
+      var results = [];
+
+      for (var i= 1; i < numberOfLoops+1; i++ ){
+        results[i] = String("loop has ran ") + String(i) + " times" + "\n";
+      }
+
+      var element = document.getElementById("target");
+      element.innerHTML = results;
+
+    }
+
+
+
+  </script>
+
+  </body>
+</html>

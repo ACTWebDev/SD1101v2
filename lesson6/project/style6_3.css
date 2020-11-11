@@ -1,0 +1,110 @@
+/*Set the box margin of the <body> to zero. */
+body {
+  margin: 0;
+}
+
+/*Use a 2-column CSS Grid for the nav*/
+nav {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/*Styling the brandname class. */
+
+.brandname{
+  margin-left: 2em;
+  padding: .2em .2em .2em .2em;
+  font-size:  2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #bc604f;
+  text-shadow: 1px 1px 2px rgb(88, 32, 0);
+}
+
+
+/*Set the nav's ul to be a grid container. It will be a 3-column grid.*/
+nav ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*1fr 1fr 1fr */
+  padding: 0;
+}
+
+/*Remove the bullets from the list items and increase font size*/
+nav ul li{
+  
+  list-style: none;
+  font-size: 1.3em;
+}
+
+/*Holds our background image with a lighter opacity. Has a large height*/
+.container{
+  background-image: url(images/banner-flowers.jpg);
+  background-size: cover;
+  opacity: .8;
+  height: 50vh;
+}
+
+/*The Container's paragraph. Set to large and white, with a black shadow.*/
+.container p {
+  font-size: 4em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-shadow: .05em  .04em black;
+  width: 44%;
+  padding: 0em .5em;
+  margin-bottom: 1.5rem;
+}
+
+/*Style the button with a linear gradient*/
+button{
+
+  width: 220px;
+  font-size:  1.4em;
+  margin-bottom: 4em;
+  margin-left: 3em;
+  padding: .5em .5em;
+  background-image: linear-gradient(-45deg, pink, red);
+  color: rgb(250, 250, 250);
+  border-style: none;
+  /* box-shadow: 3px 3px #333; */
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1em;
+  margin: 1em 1em;
+
+}
+
+img{
+  width:100%;
+  height:200px;
+  object-fit: cover;
+}
+
+.detail{
+  background-color:#CCCCC8 ;
+  margin: 1em 3em;
+  padding: .5em 2em;
+  font-size: 1.2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+  background-color: black;
+  text-align: center;
+  color: white; 
+  font-size: 1.2em;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    <meta lang="en-US">
+    
+    <title>Bootstrap Grid</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+    div{
+      background-color: rgb(200,200,200);
+      border: 1px solid rgb(100,100,100);
+    }
+
+    p{
+      background-color:white;
+      height: 400px;
+      margin: 20px;
+      padding: 1%;
+    }
+
+    .short{
+      background-color:white;
+      height: 100px;
+      margin: 20px;
+      padding: 1%;
+    }
+
+    .tall{
+      height: 500px;
+      margin: 20px;
+      padding: 1%;
+    }
+
+    </style>
+
+
+  </head>
+
+
+  <body>
+    <h1>Bootstrap Grid</h1>
+    <div class="container"> 
+      <div class="row">
+        <div class="col-4">4 Unit Column</div>
+        <div class="col-4">4 Unit Column</div>
+        <div class="col-4">4 Unit Column</div>
+      </div>
+      <div class="row">
+        <div class="col-2">2 Units </div>
+        <div class="col-2">2 Units </div>
+        <div class="col-8">8 Units </div>
+      </div>
+      <div class="row">
+        <div class="col-3">3 Units </div>
+        <div class="col-3">3 Units </div>
+        <div class="col-5">5 Units </div>
+        <div class="col-1">1 Units </div>
+      </div>
+    </div>
+
+    <br>
+
+   <div class="container"> 
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-12">Depends on Screen</div>
+        <div class="col-lg-2 col-md-4 col-sm-12">Depends on Screen </div>
+        <div class="col-lg-2 col-md-4 col-sm-12">Depends on Screen </div>
+      </div>
+    </div>
+
+    <br>
+
+   <div class="container"> 
+      <div class="row">
+        <p class="col-md-5 mr-auto">Left</p>
+        <p class="col-md-5 ml-auto">Right </p>
+      </div>
+    </div>
+
+    <br>
+
+   <div class="container"> 
+      <div class="row align-items-start tall">
+        <p class="col-md-3 short">Set to Parent's Bottom</p>
+        <p class="col-md-3 short">Set to Parent's Bottom </p>
+        <p class="col-md-3 short">Set to Parent's Bottom </p>
+      </div>
+    </div>
+
+   <div class="container"> 
+      <div class="row tall">
+        <p class="col-md-3 align-self-start short">Set to Parent's Top</p>
+        <p class="col-md-3 align-self-center short">Set to Parent's Center </p>
+        <p class="col-md-3 align-self-end short">Set to Parent's Bottom </p>
+      </div>
+    </div>
+
+
+
+  
+  </body>
+</html>

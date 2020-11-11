@@ -1,0 +1,65 @@
+.one{
+  box-sizing: border-box;
+  background-color:lightpink;
+  width:100px;
+  text-align: center;
+  border: 5px solid purple;
+  margin: 50px;
+  padding-top: 125px;
+  padding-bottom: 125px;
+  height: 250px;
+}
+
+.two{
+  box-sizing: border-box;
+  background-color:yellow;
+  width:100px;
+  text-align: center;
+  border: 5px solid green;
+  margin-top: 85px;
+  padding:20px;
+
+}
+
+.three{
+  box-sizing: border-box;
+  box-sizing: border-box;
+  background-color:yellowgreen;
+  width:100px;
+  text-align: center;
+  border: 5px solid blue;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.four{
+  box-sizing: border-box;
+  background-color:plum;
+  width:100px;
+  text-align: center;
+  border: 5px solid darkmagenta;
+  margin-top:0px;
+  margin-bottom: 90px;
+  padding: 20px;
+}
+
+.five{
+  box-sizing: border-box;
+  background-color:skyblue;
+  width:100px;
+  text-align: center;
+  border: 5px solid darkblue;
+  margin:50px;
+  padding: 10px;
+  padding-top: 125px;
+  padding-bottom: 125px;
+  height: 250px;
+
+}
+
+table{
+  box-sizing: border-box;
+  border: 10px solid black;
+}

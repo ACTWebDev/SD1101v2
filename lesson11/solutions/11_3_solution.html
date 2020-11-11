@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    <meta lang="en-US">
+    
+    <title>10_3 Lab</title>
+    <style>
+table{
+border: 5px solid lightgray;
+border-collapse: collapse;
+width: 50vw;
+visibility: visible;
+}
+
+tr:nth-child(even){
+  background-color: lightskyblue}
+
+tr:nth-child(odd){
+  background-color: lightgrey
+
+}
+th{
+  background-color:white;
+
+}
+
+td{
+  border: 1px solid black;
+}
+
+
+    #btn1{
+      width: '75px';
+      margin: auto;
+      float: right;
+      padding: 1%;
+
+    }
+    </style>
+
+
+  </head>
+
+
+  <body>
+    <h1>10_3 Lab</h1>
+        <input type='button' id="btn1" onclick="jsFunction()" value='Execute JS'>
+
+    <table id="table">
+      <tr>
+        <th>Product Name</th>
+        <th>Serving</th>
+        <th>Package </th>
+        <th>Price</th>
+        <th>Qty</th>
+      </tr>
+      <tr>
+        <td class='product'></td>
+        <td class='serving'></td>
+        <td class='package'></td>
+        <td class='price'></td>
+        <td class='qty'></td>
+      </tr>
+      <tr>
+        <td class='product'></td>
+        <td class='serving'></td>
+        <td class='package'></td>
+        <td class='price'></td>
+        <td class='qty'></td>
+      </tr>
+      <tr>
+        <td class='product'></td>
+        <td class='serving'></td>
+        <td class='package'></td>
+        <td class='price'></td>
+        <td class='qty'></td>
+      </tr>
+      <tr>
+        <td class='product'></td>
+        <td class='serving'></td>
+        <td class='package'></td>
+        <td class='price'></td>
+        <td class='qty'></td>
+      </tr>
+
+
+    </table>
+
+  
+  <script >
+
+
+function jsFunction(){
+ 
+  document.getElementById("table").style.visibility = 'visible';
+ 
+  var requestURL = 'https://raw.githubusercontent.com/ACTWebDev/SD101/master/mydata.json';
+  var request = new XMLHttpRequest;
+  request.open('GET', requestURL);
+  
+  request.onreadystatechange = function(){
+    console.log(this.readyState + " " + this.status + " " + this.statusText);
+    if (this.readyState == 4 && this.status == 200){
+      var jsonData = this.responseText;
+      console.log(jsonData);
+      var objectData = JSON.parse(jsonData);
+      
+      let productColumns = document.getElementsByClassName("product");
+      for (let p = 0; p < productColumns.length; p++){
+        html = productColumns[p] ;
+        html.innerHTML = objectData.products[p].productName;
+      }
+
+      let servingColumns = document.getElementsByClassName("serving");
+      for (let p = 0; p < servingColumns.length; p++){
+        html = servingColumns[p] ;
+        html.innerHTML = objectData.products[p].serving;
+      }
+
+      let packageColumns = document.getElementsByClassName("package");
+      for (let p = 0; p < packageColumns.length; p++){
+        html = packageColumns[p] ;
+        html.innerHTML = objectData.products[p].package;
+      }
+
+      let priceColumns = document.getElementsByClassName("price");
+      for (let p = 0; p < priceColumns.length; p++){
+        html = priceColumns[p] ;
+        html.innerHTML = objectData.products[p].prices;
+      }
+
+      let qtyColumns = document.getElementsByClassName("qty");
+      for (let p = 0; p < qtyColumns.length; p++){
+        html = qtyColumns[p] ;
+        html.innerHTML = objectData.products[p].qty;
+      }
+
+
+
+
+    }
+  }
+
+  request.send();
+
+  }
+
+
+  </script>
+
+  </body>
+</html>

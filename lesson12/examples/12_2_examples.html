@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    <meta lang="en-US">
+    <script src='jquery-3.4.1.js'></script>
+    
+    <title>JQuery Examples </title>
+    <style>
+
+
+    #btn1{
+      width: '75px';
+      margin: auto;
+      float: right;
+      padding: 1%;
+
+    }
+    </style>
+
+
+  </head>
+
+
+  <body>
+    <h1>JQuery Examples</h1>
+    <input type='button' id="btn1" onclick="jQueryDoStuff()" value='Execute JS'>
+
+    <h1 id='myhtml'>Hello  </h1>
+    <p> Some Text. </p>
+    <h2 class='someClass'> Heading 2 </h2>
+  
+  <script>
+  window.onload=fun1 
+  
+ 
+
+  $(document).ready(function RunThisCodeFirst(){
+
+      $("#myhtml").remove();  //remove element with id myhtml from the document.
+      $("p").html("changed by jQuery"); //change the innerHTML of all p elements to "changed by jQuery"
+      $(".someClass").hide(); //hide the elements of the  class someClass
+      alert("I ran on document being ready.")
+    });
+
+   function fun1(){
+    alert("I ran on the window being load.")
+  }
+
+
+  </script>
+
+  </body>
+</html>

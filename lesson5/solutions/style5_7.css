@@ -1,0 +1,36 @@
+#dwarfs{
+list-style-type: square;
+list-style-position: inside;
+background-color: rgb(148, 189, 148);
+width: 25vw;
+
+}
+
+#movies{
+list-style-type: upper-roman;
+list-style-position: outside;
+background-color: rgb(207, 158, 193);
+width: 25vw;
+}
+
+.records{
+border: 5px solid lightgray;
+border-collapse: collapse;
+width: 50vw;
+}
+
+tr:nth-child(even){
+  background-color: lightskyblue}
+
+tr:nth-child(odd){
+  background-color: lightgrey
+
+}
+th{
+  background-color:white;
+
+}
+
+td{
+  border: 1px solid black;
+}

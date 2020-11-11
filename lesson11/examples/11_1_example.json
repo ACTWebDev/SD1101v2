@@ -1,0 +1,22 @@
+{
+    "people": [
+        {
+        "firstname":"Jim",
+        "lastname":"Doe",
+        "age":"24",
+        "favoritecolor":"blue"
+        },
+        {
+        "firstname":"Dwanye",
+        "lastname":"Smith",
+        "age":"32",
+        "favoritecolor":"red"
+        },
+        {
+        "firstname":"Mary",
+        "lastname":"Johnson",
+        "age":"16",
+        "favoritecolor":"yellow"
+        }
+    ]
+}

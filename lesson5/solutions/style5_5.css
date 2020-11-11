@@ -1,0 +1,26 @@
+.woo{
+  text-align: right;
+  word-spacing: 3em;
+  text-shadow: .3em 0.3em red;
+  font-size: 1.5em;
+
+}
+
+.moo{
+  text-align: center;
+  letter-spacing: 3px;
+  text-shadow: .3em 0.3em red;
+  font-family: Georgia;
+  font-size: 20px;
+
+}
+p {
+  text-align: left;
+   
+
+}
+
+#foo{
+  text-decoration: underline;
+  text-transform: uppercase;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    <meta lang="en-US">
+    <script src='jquery-3.4.1.js'></script>
+    
+    <title>JQuery Syntax</title>
+    <style>
+    #btn1{
+      width: '75px';
+      margin: auto;
+      float: right;
+      padding: 1%;
+
+    }
+
+    p{
+      width: 250px;
+      height: 450px;
+      background-color: gray;
+      margin: 30px;
+      color: white;
+      font-size: 0.8em;
+      padding: 1%;
+    }
+    </style>
+
+
+  </head>
+
+
+  <body>
+    <h1>JQuery Syntax</h1>
+
+    <input type='button' id="btn1" onclick="jQueryDoStuff()" value='Execute JS'>
+    <h3>Get some AJAX data</h3>
+    <p></p>
+
+  
+  <script>
+    function jQueryDoStuff(){
+      $("p").load("https://api.weather.gov/gridpoints/TOP/31,80/forecast")
+
+    }
+
+  </script>
+
+  </body>
+</html>

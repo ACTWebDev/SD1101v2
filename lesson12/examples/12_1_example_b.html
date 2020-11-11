@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    <meta lang="en-US">
+    <script src='jquery-3.4.1.js'></script>
+    
+    <title>JQuery Syntax</title>
+    <style>
+
+    .style1{
+      width: 200px;
+      height: 200px;
+      background-color: darkslategray;
+      color: white;
+      font-size: 1.1em;
+      margin: 1em;;
+    }
+
+    .style2{
+      width: 200px;
+      height: 200px;
+      background-color: lightgrey;
+      color: black;
+      font-size: 1.1em;
+      margin: 1em;
+    }
+
+    </style>
+
+
+  </head>
+
+
+  <body>
+    <h1>JQuery Syntax Comparsion</h1>
+
+   
+    <h3>Remove Element</h3>
+
+    <div id="1" class="style1" onclick="jsRemove()">
+      <p>Remove with JavaScript</p>
+    </div>
+
+    <div id="2" class="style2" onclick="jQueryRemove()">
+      <p>Remove with JQuery</p>
+    </div>
+
+
+    <h3>Add Element</h3>
+
+    <div id="3" class="style1" onclick="jsAdd()">
+      <p>Add new element with JavaScript</p>
+    </div>
+
+    <div id="4"class="style2" onclick="jQueryAdd()">
+      <p>Add new element with JQuery</p>
+    </div>
+
+
+    <h3>Style Element</h3>
+
+    <div id="5" class="style1" onclick="jsStyle()">
+      <p>Add new element with JavaScript</p>
+    </div>
+
+    <div id="6" class="style2" onclick="jQueryStyle()">
+      <p>Add new element with JQuery</p>
+    </div>
+  
+  <script>
+
+    function jsRemove(){
+      let elementToRemove = document.getElementById("1");
+      elementToRemove.parentNode.removeChild(elementToRemove);
+    }
+
+    function jQueryRemove(){
+      $("#2").remove();
+    }
+
+    function jsAdd(){
+      let newElement = document.createElement("p");
+      newElement.innerText = "New element was added by Javascript."
+      parent = document.getElementById("3");
+      parent.appendChild(newElement);
+
+    }
+
+    function jQueryAdd(){
+      let newElement = document.createElement("p");
+      newElement.innerText =  "New element was added by jQuery";
+      $("#4").append(newElement);
+    }
+
+
+
+    function jsStyle(){
+      let elementToStyle = document.getElementById("5");
+      elementToStyle.style.backgroundColor = 'rgb(0,140,0)';
+    }
+
+    function jQueryStyle(){
+      $("#6").css("backgroundColor", 'rgb(245, 233, 66)');
+    }
+
+
+
+
+
+
+
+  </script>
+
+  </body>
+</html>

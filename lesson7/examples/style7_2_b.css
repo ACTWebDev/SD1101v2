@@ -1,0 +1,70 @@
+.myflexbox{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40vh;
+  background-color: gray;
+
+}
+
+
+.myflexbox div{
+  width: 20vw;
+  height: 50px;
+  margin: 5px;
+  box-sizing: border-box;
+  background-color:rgb(78, 109, 243);
+  text-align: center;
+  border: 5px solid purple;
+  color:white;
+  padding: 1%;
+}
+
+.flexbox2{
+  display:flex;
+  flex-direction: row;
+
+}
+
+.flexbox2 p{
+  width: 32vw;
+  margin: 5px;
+  box-sizing: border-box;
+  background-color:rgb(250, 202, 175);
+  text-align: center;
+  color:black;
+  padding: 1%;
+}
+
+.flexbox3{
+  display:flex;
+  flex-direction: row;
+
+}
+
+.flexbox3 section{
+  max-width: 25%;
+  flex:3;
+  background-color:rgb(95, 99, 75);
+  color:white;
+  text-align: left;
+  margin-right: .5%;
+  font-size: 1.5em;
+
+}
+
+.flexbox3 article{
+  max-width: 75%;
+  flex:9;
+  background-color: rgb(212, 154, 88);
+  padding: 1%;
+  color:black;
+  
+
+}
+
+.flexbox3 section ul{
+  list-style: none;
+}

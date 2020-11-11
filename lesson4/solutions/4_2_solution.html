@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    <meta lang="en-US">
+    
+    <title>Contact Us</title>
+  </head>
+
+  <body>
+    <h1>Contact Us</h1>
+    <p> Have a question or feedback for our website? Please contact us! </p>
+    <form method='POST' action='http://www.hashemian.com/tools/form-post-tester.php' name="form1">
+      <label for "name">Name </label>
+      <input type="text" name="name">
+      <label for "email">Email Address </label>
+      <input type="email" name="email" size="30">
+      <br><br>
+      <label for"rating"> Rating </label>
+      <select name="rating" form="form1">
+        <option value="1">1 Star</option> 
+        <option value="2">2 Star</option> 
+        <option value="3">3 Star</option> 
+        <option value="4">4 Star</option> 
+        <option value="5">5 Star</option> 
+      </select>
+
+      <br><br>
+      <label for "comments">Comments </label>
+      <textarea name="comments" rows="6" cols="60" form="form1"> </textarea>
+      <br><br>
+      <input type="submit" value="Submit">
+
+    </form>
+
+  </body>
+
+</html>
+

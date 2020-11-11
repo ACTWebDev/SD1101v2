@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    <meta lang="en-US">
+    
+    <title>JS Object</title>
+    <style>
+    div{
+      display:flex;
+      box-sizing: border-box;
+      width: 500px;
+      height:500px;
+      background-color: rgb(200,200,200);
+      margin: auto;
+      border: 2px solid black;
+      font-size: 2em;
+      overflow: auto;
+      
+    }
+
+
+    #btn1{
+      width: '75px';
+      margin: auto;
+      float: right;
+      padding: 1%;
+
+    }
+    </style>
+
+
+  </head>
+
+
+  <body>
+    <h1>JS Object</h1>
+    <label for='make'>Car Make</label>
+    <input type=textbox id='make' name='make'>
+    <label for='inputbox2'>Car Model</label>
+    <input type=textbox id='model' name='model'>
+    <label for='year'>Year</label>
+    <input type=number id='year' name='year'>
+    <label for='color'>Car Color</label>
+    <input type=textbox id='color' name='color'>
+
+
+    <div id='target'> 
+        <input type='button' id="btn1" onclick="jsObject()" value='Show Car Details'>
+
+    </div>
+
+  
+  <script>
+    function jsObject(){
+      var car = {
+        'make':document.getElementById('make').value,
+        'model':document.getElementById('model').value,
+        'year': document.getElementById('year').value,
+        'color': document.getElementById('color').value
+      }
+
+      var element = document.getElementById("target");
+      element.innerHTML = JSON.stringify(car);
+
+    }
+
+    function jsSub(){
+      var input1 = document.getElementById('inputbox1');
+      var input2 = document.getElementById('inputbox2');
+      var result = Number(input1.value) - Number(input2.value)
+      var element = document.getElementById("target");
+      element.innerHTML = result;
+
+    }
+
+  </script>
+
+  </body>
+</html>

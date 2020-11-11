@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+
+  </head>
+  <body>
+    <h1>Form Validation with JS</h1>
+
+    <form method="POST" action="https://www.hashemian.com/tools/form-post-tester.php/">
+      <input type="text" id="name" name="name" required onchange="validate()">
+      <input type="submit"  id="submit" value="Submit">
+    </form>
+
+    <div>
+      <p id="warn" hidden>Name can not contain a number</p>
+    </div>
+    
+    <script src="formvalidator.js"></script>
+  </body>
+</html>

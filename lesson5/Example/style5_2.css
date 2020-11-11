@@ -1,0 +1,53 @@
+.bluestyle{
+  background-color: darkblue;
+  color:white;
+}
+
+#redstyle{
+  background-color:crimson;
+  color:black;
+
+}
+
+h1, h2, h3, .blackandwhite {
+  background-color: black;
+  color:white;
+  font-size: 20px;
+  font-family: Helvetica;
+  font-style: italic;
+}
+
+div{
+  height: 100px;
+  width: 33%;
+  background-color: #56999281;
+  border: 5px solid red;
+
+}
+
+p {
+  color:white;
+  font-size: 16px;
+}
+
+
+#box {
+  border: 10px solid red;
+  padding: 20px;
+  margin: 15px;
+}
+
+.one{
+  position:static;
+}
+
+.two{
+  position: relative;
+}
+
+#text-abs{
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  color: black;
+}

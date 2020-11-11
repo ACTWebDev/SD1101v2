@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    
+    <title>Form elements.</title>
+  </head>
+
+  <body>
+    <h1>Form Elements</h1>
+
+    <form method='POST' action='https://postman-echo.com/post' enctype='application/x-www-form-urlencoded'>
+      <label for='fname'>First Name </label>
+      <input id='fname' type="text" name='username' required placeholder="enter your name">
+      
+      <label for='pw'>Enter your Password</label>
+      <input id='pw' type="password" name='userpassword' required placeholder="enter your password.">
+      
+      <label for="dp">date </label>
+      <input id='dp' type="date" name="datepicker">
+      
+      <label for="email">email </label>
+      <input id='email' type="email" name='emailAddress'>
+
+      <label for="cbox">Subscribe to our new letter </label>
+      <input id='cbox' type="checkbox" name="Subscribe" checked>
+
+      <label for="radiobtn">radio button example </label>
+      <input id='radiobtn' type="radio" name="radio">
+
+      <label for="tvShow">Favorite TV Show</label>
+      <input id="tvShow" type="text" name="favoriteTVShow" value="Wheel of Fortune" readonly>
+
+      <input type="submit" value="Submit">
+      <input type="reset">
+
+    </form>
+
+  </body>
+
+</html>
+

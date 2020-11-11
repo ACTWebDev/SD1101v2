@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    <meta lang="en-US">
+    <script src='jquery-3.4.1.js'></script>
+    
+    <title>JQuery Template</title>
+    <style>
+    div{
+      box-sizing: border-box;
+      width: 500px;
+      height:500px;
+      background-color: rgb(200,200,200);
+      margin: auto;
+      border: 2px solid black;
+      font-size: 2em;
+      
+    }
+
+
+    #btn1{
+      width: '75px';
+      margin: auto;
+      float: right;
+      padding: 1%;
+
+    }
+    </style>
+
+
+  </head>
+
+
+  <body>
+    <h1>JQuery Template</h1>
+    <div id='target'> 
+        <input type='button' id="btn1" onclick="jQueryF()" value='Execute JS'>
+    </div>
+
+  
+  <script>
+    function JQueryF(){
+
+      var element = document.getElementById("target");
+      element.innerHTML = "Hello JavaScript";
+
+    }
+
+  </script>
+
+  </body>
+</html>

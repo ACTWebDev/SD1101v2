@@ -1,0 +1,36 @@
+.one{
+  width:350px;
+  position: relative;
+  left:20px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.two{
+  width:300px;
+  position: relative;
+  left:10px;
+  border: 2px solid black;
+}
+.one p{
+  background-color: seagreen;
+  color: white;
+}
+
+.two+p{
+  background-color: yellow;
+}
+
+.two>p{
+  background-color:tomato;
+}
+
+.one p:before{
+  background-color: plum;
+  content: 'Added Before--'
+}
+
+.one p:after{
+  background-color:purple;
+  content:'--Added After';
+}

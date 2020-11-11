@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    <meta lang="en-US">
+    
+    <title>JS Cookie</title>
+    <style>
+    div{
+      box-sizing: border-box;
+      width: 500px;
+      height:500px;
+      background-color: rgb(200,200,200);
+      margin: auto;
+      border: 2px solid black;
+      font-size: 1.5em;
+      
+    }
+
+
+    #btn1{
+      width: '75px';
+      margin: auto;
+      float: right;
+      padding: 1%;
+
+    }
+    </style>
+
+
+  </head>
+
+
+  <body>
+    <h1>JS Cookie and Web Storage</h1>
+    <div id='target'> 
+        <input type='button' id="btn1" onclick="jsWebStorage()" value='Add to Web Storage JS'>
+    </div>
+
+  
+  <script>
+    function jsWebStorage(){
+      sessionStorage.setItem("lastname","Smith")
+      sessionStorage.setItem("firstname","Sam") 
+      sessionStorage.setItem("optin","True") 
+      sessionStorage.setItem("favoriteProduct","Sports Equipment") 
+
+      document.cookie = "newCookie=JavaScript is Awesome!"
+
+ 
+
+      var element = document.getElementById("target");
+      element.innerHTML = "Open the Chrome Dev Tool > Application > Session Storage.  \n" +  
+      "We can not show an example of cookies without a web server and HTTP protocol.  \n" +
+      "Chrome does not allow cookies to be created with JS without HTTP protocol" ;
+
+    }
+
+  </script>
+
+  </body>
+</html>
